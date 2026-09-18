@@ -32,3 +32,5 @@ Install
      scripts/combat_fx.gd
 4. Open in Godot 4.7.2, then Project → Export → macOS → Export Project.
 5. Play. The status line already shows FPS. Prefer 20 vs 20 for the smoother match.
+
+I cannot press Export on your Mac from this chat.
