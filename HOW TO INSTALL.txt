@@ -1,0 +1,34 @@
+Plastic Command 0.26.1 — lag patch for Mac
+=========================================
+
+This is not a new .app. Copy these files into your existing Godot 4.7.2
+project, then export on your Mac the same way you made 0.26.
+
+What this does for hitching
+---------------------------
+- Turns Balanced graphics on once (0.26 saved High, which is the hitch).
+  Click High detail if you want it back; Balanced stays until you do.
+- Regular soldiers stop casting shadows. Tanks, Humvees, commando, SWAT still do.
+- Off-screen units skip animation, dust, and muzzle flashes.
+- Distant soldier IK updates less often. Balanced is stricter.
+- Balanced: no glow, 2 shadow cascades (High still 4x AA + SSAO + long shadows).
+- Hover picking and civilians update less often.
+- Debris pieces capped at 80. Nearby gun FX cull closer.
+
+Gameplay, army sizes, saves, and LAN protocol 20 are unchanged.
+
+Install
+-------
+1. Quit the game.
+2. Open your Godot project:
+     Documents/ChatGPT/Soldier Game/PlasticCommand
+3. Copy from this zip over the same paths (replace):
+     project.godot
+     scripts/battle.gd
+     scripts/hud.gd
+     scripts/world_view.gd
+     scripts/plastic_surfaces.gd
+     scripts/plastic_debris.gd
+     scripts/combat_fx.gd
+4. Open in Godot 4.7.2, then Project → Export → macOS → Export Project.
+5. Play. The status line already shows FPS. Prefer 20 vs 20 for the smoother match.

@@ -1,0 +1,39 @@
+config_version=5
+
+[application]
+config/name="Plastic Command — Gulf Crossing"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/description="A native 3D toy-army RTS with headquarters assault and optional five-minute 20 vs 20 respawn battles."
+config/version="0.26.1"
+config/icon="res://assets/icon.svg"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/size/window_width_override=1920
+window/size/window_height_override=1200
+window/size/min_width=1050
+window/size/min_height=650
+window/stretch/mode="canvas_items"
+window/dpi/allow_hidpi=true
+
+[rendering]
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="mobile"
+textures/default_filters/use_nearest_mipmap_filter=false
+anti_aliasing/quality/msaa_3d=2
+lights_and_shadows/directional_shadow/size=4096
+textures/default_filters/anisotropic_filtering_level=3
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
+viewport/transparent_background=false
+
+[physics]
+common/physics_ticks_per_second=30
+
+[audio]
+driver/enable_input=false
+
+[debug]
+gdscript/warnings/treat_warnings_as_errors=false
